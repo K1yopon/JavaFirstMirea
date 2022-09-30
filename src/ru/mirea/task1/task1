@@ -1,0 +1,39 @@
+package ru.mirea.task1;
+
+import java.util.Arrays;
+import java.util.Random;
+
+public class task1 {
+    public static void main(String[] args){
+        double[] arr = {1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9};
+        double sum=0;
+
+        System.out.println("№3");
+        //for
+        for(int i=0; i < arr.length; i++){
+            sum += arr[i];
+        }
+        System.out.println("For. Сумма всех элементов массива: " + sum);
+
+        System.out.println("№4");
+        //while
+        double sum1=0;
+        int i=0;
+        while (i < arr.length){
+            sum1+=arr[i];
+            i++;
+        }
+        System.out.println("While. Сумма всех элементов массива: " + sum);
+
+        //do while
+        double sum2=0;
+        i=0;
+        do {
+            sum2+=arr[i];
+            i++;
+        } while (i < arr.length);
+        System.out.println("Do While. Сумма всех элементов массива: " + sum);
+
+
+    }
+}
